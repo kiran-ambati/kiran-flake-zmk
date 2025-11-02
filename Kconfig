@@ -1,8 +1,5 @@
 # Copyright (c) 2025 Kiran
 # SPDX-License-Identifier: MIT
 
-config KIRAN_FLAKE
-    bool "Kiran Flake keyboard module"
-    default y
-
-rsource "boards/*/Kconfig"
+rsource "boards/shields/*/Kconfig.shield"
+rsource "boards/shields/*/Kconfig.defconfig"
