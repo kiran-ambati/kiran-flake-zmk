@@ -1,0 +1,19 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: anywhy
+      url-base: https://github.com/anywhy-io
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    # Include the Flake shield as a Zephyr module (board_root provided by zephyr/module.yml)
+    - name: flake-zmk-module
+      remote: anywhy
+      revision: main
+      path: flake-zmk-module
+  self:
+    # This repo is the user config (kiran-flake); keep as 'config' so west -l . works from kiran-flake
+    path: config

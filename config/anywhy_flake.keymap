@@ -1,0 +1,21 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        test {
+            // Single-layer, simple QWERTY-style bindings; works standalone on the right half.
+            // The shield transform handles left/right; building with SHIELD=anywhy_flake_right
+            // will apply the right-side col offset so only those keys are active on your PCB.
+            bindings = <
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
+&kp ENTER  &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
+&kp TAB    &kp A     &kp S     &kp D      &kp F      &kp G     &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
+&kp LBKT   &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
+           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &kp SPACE &kp ENTER  &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL
+            >;
+        };
+    };
+};
