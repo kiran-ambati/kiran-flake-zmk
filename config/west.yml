@@ -9,5 +9,4 @@ manifest:
       import: app/west.yml
   self:
     path: config
-    import: ../zephyr/module.yml
 
