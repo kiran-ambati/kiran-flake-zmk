@@ -1,9 +1,0 @@
-# Build configuration for Kiran Flake (right half only)
-# This builds only the right side as a standalone keyboard for testing
----
-include:
-  - board: seeeduino_xiao_ble
-    shield: kiran_flake
-    cmake-args: -DSHIELD="kiran_flake"
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
