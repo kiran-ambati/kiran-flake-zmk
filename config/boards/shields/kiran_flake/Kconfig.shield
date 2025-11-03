@@ -1,0 +1,2 @@
+config SHIELD_KIRAN_FLAKE
+    def_bool $(shields_list_contains,kiran_flake)
