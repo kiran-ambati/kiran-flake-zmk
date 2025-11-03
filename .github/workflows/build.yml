@@ -1,30 +1,13 @@
-name: Build right-half firmware
+name: Build (Kiran Flake)
 
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    # Use the ZMK build environment (includes Zephyr SDK + toolchains)
-    container: zmkfirmware/zmk-build-arm:stable
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Initialize west workspace
-        run: west init -l config
-
-      - name: Update west projects
-        run: west update
-
-      - name: Build right half (seeeduino_xiao_ble + anywhy_flake_right)
-        run: west build -s zmk/app -b seeeduino_xiao_ble -- -DSHIELD=anywhy_flake_right
-
-      - name: Upload UF2 artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: kiran-flake-right-uf2
-          path: build/zephyr/zmk.uf2
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      archive-artifact-name-suffix: ""
+    secrets: inherit

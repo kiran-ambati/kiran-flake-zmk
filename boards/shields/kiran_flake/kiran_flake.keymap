@@ -1,0 +1,31 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        base {
+            // 6 columns x 5 rows = 30 positions. Row-major order.
+            // Bottom row has only 5 physical keys; Row 4 Col 0 is unused -> &none.
+            bindings = <
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5
+&kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T
+&kp LSHFT  &kp A     &kp S     &kp D      &kp F      &kp G
+&kp LCTRL  &kp Z     &kp X     &kp C      &kp V      &kp B
+&none      &kp LGUI  &kp LALT  &kp SPACE  &mo 1      &mo 2
+            >;
+        };
+
+        fn {
+            bindings = <
+&trans &trans &trans &trans &trans &trans
+&trans &kp F1 &kp F2 &kp F3 &kp F4 &soft_off
+&trans &kp F5 &kp F6 &kp F7 &kp F8 &bt0
+&trans &kp F9 &kp F10 &kp F11 &kp F12 &bt1
+&trans &trans &trans &trans &trans &trans
+            >;
+        };
+    };
+};
