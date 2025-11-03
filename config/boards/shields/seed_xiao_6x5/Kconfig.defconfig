@@ -1,6 +1,0 @@
-if SHIELD_SEED_XIAO_6X5
-
-config ZMK_KEYBOARD_NAME
-    default "seed_xiao_6x5"
-
-endif

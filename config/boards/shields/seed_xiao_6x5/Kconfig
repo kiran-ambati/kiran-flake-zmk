@@ -1,2 +1,0 @@
-config SHIELD_SEED_XIAO_6X5
-    bool "Seed/XIAO nRF52840 6x5 Keyboard"
