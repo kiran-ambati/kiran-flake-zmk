@@ -1,13 +1,10 @@
-name: Build (Kiran Flake)
+name: Build ZMK
 
 on:
   push:
-    branches: [ main ]
+  pull_request:
   workflow_dispatch:
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      archive-artifact-name-suffix: ""
-    secrets: inherit
