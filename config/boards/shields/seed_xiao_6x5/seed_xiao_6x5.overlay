@@ -1,0 +1,40 @@
+/*
+ * Seeeduino XIAO BLE (nRF52840) 6x5 matrix
+ * Columns: D5 D4 D3 D2 D1 D0
+ * Rows:    D10 D9 D8 D7 D6 (with pull-downs)
+ * Diode direction: col2row (drive columns, read rows)
+ */
+
+ / {
+     kbd: kbd {
+         compatible = "zmk,keyboard";
+         label = "seed_xiao_6x5";
+
+         matrix_transform: matrix_transform {
+             compatible = "zmk,matrix-transform";
+             rows = <5>;
+             columns = <6>;
+             /* Identity transform; keymap is 5 rows x 6 cols */
+         };
+
+         kscan0: kscan {
+             compatible = "zmk,kscan-gpio-matrix";
+             label = "KSCAN";
+
+             diode-direction = "col2row";
+
+             col-gpios = <&xiao_d 5 GPIO_ACTIVE_HIGH>,
+                         <&xiao_d 4 GPIO_ACTIVE_HIGH>,
+                         <&xiao_d 3 GPIO_ACTIVE_HIGH>,
+                         <&xiao_d 2 GPIO_ACTIVE_HIGH>,
+                         <&xiao_d 1 GPIO_ACTIVE_HIGH>,
+                         <&xiao_d 0 GPIO_ACTIVE_HIGH>;
+
+             row-gpios = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                         <&xiao_d 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                         <&xiao_d 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                         <&xiao_d 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                         <&xiao_d 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+         };
+     };
+ };
