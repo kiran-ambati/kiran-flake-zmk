@@ -131,7 +131,7 @@
 
         base {
             bindings = <
-/*  0..5  */  &bt BT_CLR  &bt1      &kp N2      &kp N3      &kp N4      &kp N5
+/*  0..5  */  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &kp N4      &kp N5
 /* 6..11  */  &kp ENTER   &kp Q       &kp W       &kp E       &kp R       &kp T
 /*12..17  */  &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G
 /*18..23  */  &kp LBKT    &kp Z       &kp X       &kp C       &kp V       &kp B
