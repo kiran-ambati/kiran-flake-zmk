@@ -1,6 +1,0 @@
-if SHIELD_KIRAN_FLAKE
-            
-config ZMK_KEYBOARD_NAME
-    default "kiran_flake"
-
-endif
