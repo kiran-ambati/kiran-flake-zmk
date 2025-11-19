@@ -134,7 +134,7 @@
             bindings = <
 &kp GRAVE  &bt0      &bt1      &bt2      &none     &none     &none     &none     &none     &none     &none     &kp DEL
 &kp CAPS   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none &none  &kp BSLH  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp PG_UP
-&kp LSHFT  &none     &none     &none     &mkp LCLK &mkp RCLK &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none     &kp PG_DN
+&kp LSHFT  &none     &none     &none     &mkp LCLK &mkp RCLK &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp APOS  &kp PG_DN
 &kp LCTRL  &bt BT_CLR &none    &none     &none     &win_screenshot  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none &kp ENTER
            &kp LALT  &kp LGUI  &kp LCTRL &kp SPACE &none     &none     &kp SPACE &kp ENTER &none     &none
             >;
@@ -164,7 +164,7 @@
             bindings = <
 &kp GRAVE  &bt0      &bt1      &bt2      &none     &none     &none     &none     &none     &none     &none     &kp DEL
 &kp CAPS   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none &none  &kp BSLH  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp PG_UP
-&kp LSHFT  &none     &none     &none     &mkp LCLK &mkp RCLK &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none     &kp PG_DN
+&kp LSHFT  &none     &none     &none     &mkp LCLK &mkp RCLK &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp APOS  &kp PG_DN
 &kp LGUI   &bt BT_CLR &none    &none     &none     &mac_screenshot  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none &kp ENTER
            &kp LCTRL &kp LALT  &kp LGUI  &kp SPACE &none     &none     &kp SPACE &kp ENTER &none     &none
             >;
