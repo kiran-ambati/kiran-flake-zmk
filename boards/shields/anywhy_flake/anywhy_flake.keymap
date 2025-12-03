@@ -142,7 +142,7 @@
 
         win_mo1 {
             bindings = <
-&kp GRAVE  &bt0           &bt1          &bt2          &none         &none             &none            &none            &none          &none            &none     &kp DEL
+&kp GRAVE  &bt0           &bt1          &bt2          &none         &none             &none            &none            &kp HOME       &kp END          &none     &kp DEL
 &kp CAPS   &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &none         &none             &kp BSLH         &kp MINUS        &kp EQUAL      &kp LBKT         &kp RBKT  &kp PG_UP
 &kp LSHFT  &none          &none         &none         &mkp LCLK     &mkp RCLK         &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT        &kp APOS  &kp PG_DN
 &kp LCTRL  &bt BT_CLR     &none         &none         &none         &win_screenshot   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP   &msc SCRL_RIGHT  &none     &kp ENTER
@@ -172,7 +172,7 @@
 
         mac_mo4 {
             bindings = <
-&kp GRAVE  &bt0           &bt1          &bt2          &none         &none             &none            &none            &none          &none            &none     &kp DEL
+&kp GRAVE  &bt0           &bt1          &bt2          &none         &none             &none            &none            &kp HOME       &kp END          &none     &kp DEL
 &kp CAPS   &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP  &none         &none             &kp BSLH         &kp MINUS        &kp EQUAL      &kp LBKT         &kp RBKT  &kp PG_UP
 &kp LSHFT  &none          &none         &none         &mkp LCLK     &mkp RCLK         &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT        &kp APOS  &kp PG_DN
 &kp LGUI   &bt BT_CLR     &none         &none         &none         &mac_screenshot   &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP   &msc SCRL_RIGHT  &none     &kp ENTER
